@@ -1,0 +1,720 @@
+html,
+body {
+  /* imp */
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Custom color palette */
+:root {
+  --primary-color: #192a56;
+  /* Dark blue */
+  --secondary-color: #fff;
+  /* White */
+  --dark-primary-color: #020b21;
+  /* very Dark blue */
+}
+
+/* FONTS */
+/*HEADING*/
+.heading {
+  font-family: 'Satisfy', cursive, sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .heading {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .heading {
+    font-size: 32px;
+  }
+}
+
+/* DESCRIPTION */
+.description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .description {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .description {
+    font-size: 18px;
+  }
+}
+
+/*LOADER*/
+.preloader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  /* Change this to match your website's background color */
+  z-index: 9999;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid #ff6b6b;
+  /* Change this to your preferred color */
+  border-top: 4px solid #f9f9f9;
+  /* Change this to match your website's background color */
+  animation: spin 1.2s linear infinite;
+}
+
+/* Additional styling for the loader */
+.loader:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid rgba(255, 107, 107, 0.2);
+  /* Change this to your preferred color */
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.preloader.hide {
+  display: none;
+}
+
+/* Navbar styles */
+.navbar {
+  /* imp */
+  background-color: var(--primary-color);
+  transition: background-color 0.3s;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  opacity: 1;
+}
+
+.navbar.low-opacity {
+  /* imp */
+  opacity: 0.8;
+}
+
+.navbar-brand img {
+  /* imp */
+  max-height: 40px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  /* imp */
+  color: #fff;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item .nav-link.active {
+  /* imp */
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-toggler {
+  /* imp */
+  border-color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus,
+.navbar-nav .nav-item .nav-link:active {
+  /* imp */
+  color: #ccc;
+}
+
+/* Home section styles */
+.home-section {
+  position: relative;
+  background-color: var(--primary-color);
+  background-image: url('font\ image.jpg');
+  background-position: center;
+  background-size: cover;
+  color: var(--secondary-color);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.home-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+  /* Adjust the opacity value to your preference */
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+  .home-section {
+    /* Add responsive styles here */
+    padding: 80px 0;
+  }
+}
+
+/* Add more media queries and responsive styles as needed */
+
+.black-opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+  .home-section {
+    /* Add responsive styles here */
+    padding: 100px 0;
+  }
+}
+
+.home-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.home-section h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.btn-custom {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #f8f9fa;
+  /* Light gray */
+  color: var(--primary-color);
+}
+
+/* About Me section styles */
+.about-section {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 100px 0;
+  text-align: center;
+  background-image: url('bg9.avif');
+  /* Replace 'path/to/your/bg-image.jpg' with the actual path to your background image */
+  background-position: center;
+  background-size: cover;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-icons {
+  font-size: 30px;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.about-icons i {
+  margin: 10px;
+  color: var(--secondary-color);
+}
+
+/* Projects section styles */
+.projects-section {
+  position: relative;
+  background-color: var(--primary-color);
+  background-image: url('bg14.avif');
+  background-position: center;
+  background-size: cover;
+  color: var(--secondary-color);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.content {
+  width: 80%;
+  max-width: 800px;
+}
+
+/* CSS for the Warning Badge */
+.badge.text-bg-green {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #09aa1c;
+  /* Set the background color for the warning badge */
+  color: #fff;
+  /* Set the text color for the warning badge */
+  font-weight: bold;
+}
+
+.badge.text-bg-yellow {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #ecb309;
+  /* Set the background color for the warning badge */
+  color: #fff;
+  /* Set the text color for the warning badge */
+  font-weight: bold;
+}
+
+.project-card {
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 10px;
+  margin: 10px 10px 0 10px;
+  /* Remove margin-bottom */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card .project-overlay {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  transition: left 0.3s ease;
+  opacity: 0;
+  z-index: 1;
+}
+
+.project-card:hover .project-overlay {
+  left: 0;
+  opacity: 1;
+}
+
+.project-card .project-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-card .description {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.project-card .project-subtitle {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+
+}
+
+/* CSS styles for the "View" button */
+.view-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  /* Replace with your desired color */
+  color: var(--secondary-color);
+  /* Replace with your desired color */
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  /* Replace with your desired color */
+
+}
+
+/* Services section styles */
+.services-section {
+  /*imp*/
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 100px 0;
+  text-align: center;
+  background-image: url('bg10.avif');
+  background-position: center;
+  background-size: cover;
+}
+
+.services-section h2 {
+  /*imp*/
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.services-card {
+  /*imp*/
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 10px 0 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: var(--dark-primary-color);
+  color: var(--secondary-color);
+
+}
+
+.services-card:hover {
+  /*imp*/
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  /*imp*/
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
+
+.service-title {
+  /*imp*/
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  /*imp*/
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Certifications section styles */
+.certifications-section {
+  /*imp*/
+  background: linear-gradient(135deg, #102a4e, #000000, #3182c1);
+  color: var(--secondary-color);
+  padding: 100px 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.certificate-card {
+  /*imp*/
+  background-color: transparent;
+  padding: 20px;
+  margin: 10px;
+  border: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.certificate-card:hover {
+  /*imp*/
+  transform: translateY(-5px);
+}
+
+.certificate-card img {
+  /*imp*/
+  max-width: 100%;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+
+}
+
+.certificate-card h5 {
+  /*imp*/
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+/* Resume section styles */
+.resume-section {
+  /*imp*/
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 100px 0;
+  text-align: center;
+  background-image: url('bg12.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.resume-heading {
+  /*imp*/
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.resume-button {
+  /*imp*/
+  font-size: 18px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: block;
+  width: 250px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.resume-button:hover {
+  /*imp*/
+  background-color: black;
+  color: var(--secondary-color);
+}
+
+/* Skills section styles */
+.skills-section {
+  /*imp*/
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 100px 0;
+  background-image: url('bg15.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.skill-card {
+  /*imp*/
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.skill-card i {
+  /*imp*/
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.skill-card h5 {
+  /*imp*/
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.skill-card:hover {
+  /*imp*/
+  transform: translateY(-5px);
+}
+
+/* Contact section styles */
+.contact-section {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 100px 0;
+  background-image: url('bg11.avif');
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-control {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-primary-color);
+  color: var(--secondary-color);
+}
+
+/* Footer styles */
+.footer {
+  /*imp*/
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 20px 0;
+  text-align: center;
+  align-items: center;
+}
+
+.footer p {
+  /*imp*/
+  margin-bottom: 0;
+}
+
+.social-media-list {
+  list-style: none;
+  padding: 0;
+
+}
+
+.social-media-list li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.social-media-link {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-media-link:hover {
+  transform: scale(1.2);
+}
+
+.description {
+  font-size: 14px;
+
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-form input[type="email"],
+.subscribe-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.subscribe-form input[type="email"] {
+  width: 200px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.subscribe-form button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #0056b3;
+}
+
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.scroll-to-top.show {
+  display: block;
+}
