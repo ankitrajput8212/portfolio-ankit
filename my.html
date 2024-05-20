@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>TM Portfolio</title>
+  <!-- Link the Google Font 'Satisfy' for the heading -->
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <!-- Link the Google Font 'Poppins' for the description -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  include('header.php');
+
+  <div class="preloader">
+    <div class="loader"></div>
+    <p>Loading...</p>
+  </div>
+  <!--NAVBAR-->
+  <!-- FINAL ----------------------------------------->
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <a class="navbar-brand heading" href="#" style="padding-top:15px;font-size: 20px;">
+      <img src="ankit pic.jpg" alt="Logo" class="rounded-circle" style="width: 40px; height: 80px; margin-right: 10px;">
+      Ankit Rajput
+
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link description" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link description" href="#about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link description" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link description" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link description" href="#skills">Skills</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link description" href="#resume">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link description" href="#certifications">Certifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link description" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <!-- FINAL ----------------------------------------->
+  <section class="home-section" id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h1 id="name" class="description" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);padding-top: 90px;">
+            Hello! I'm
+            <span class="heading" style="font-size: 36px;">Ankit Rajput</span>
+          </h1>
+          <h2 id="designation" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Web Developer | Freelancer</h2>
+          <a href="#contact" class="btn-custom description">Available to Hire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Me Section -->
+  <!-- FINAL ----------------------------------------->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h2 class="heading">About Me</h2>
+          <p class="description">
+            I am Ankit Rajput , A Second-year BCA(AIML) student with a passion for web development and Mobile App Development. I
+            have chosen to embark on a freelancing journey to explore and enhance my skills in these domains. As a web
+            developer, I excel in languages like HTML, CSS, and JavaScript, allowing me to create captivating and
+            user-friendly websites and web applications.Despite being in the early stages of my
+            academic journey, my dedication and practical experience in freelancing are shaping me into a promising web
+            developer and Mobile App Development specialist.
+          </p>
+          <div class="about-icons">
+            <i class="fab fa-html5" title="HTML5"></i>
+            <i class="fab fa-css3-alt" title="CSS3"></i>
+            <i class="fab fa-js-square" title="JavaScript"></i>
+            <i class="fab fa-react" title="React"></i>
+            <i class="fab fa-node-js" title="Node.js"></i>
+            <i class="fas fa-database" title="Databases"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="projects">
+    <h2 class="heading">Projects</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="project-card">
+            <img src="project1.jpg" alt="Project 1" class="project-image">
+            <div class="project-overlay">
+              <div class="project-info">
+                <div class="heading">Temperature Converter</div>
+                <span class="badge text-bg-green">Completed</span>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7153999704194727936/"
+                  class="view-button">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="project-card">
+            <img src="projects2.png" alt="Project 1" class="project-image">
+            <div class="project-overlay">
+              <div class="project-info">
+                <div class="heading">BS Portfolio website</div>
+                <span class="badge text-bg-yellow">In Progress</span>
+                <a href="#" class="view-button">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Services Section -->
+  <!-- FINAL ----------------------------------------->
+  <section class="services-section" id="services">
+    <h2 class="heading">Services</h2>
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="services-card">
+              <div class="service-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="description" style="font-size: 20px;">Web Development</div>
+              <div class="description">
+                I specialize in building modern and responsive websites using the latest web technologies. From static
+                websites to dynamic web applications, I can handle it all.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="services-card">
+              <div class="service-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <div class="description" style="font-size: 20px;">Mobile-Friendly Design</div>
+              <div class="description">
+                With mobile usage on the rise, I ensure that your website is fully optimized for mobile devices,
+                providing a seamless user experience across all screen sizes.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="services-card">
+              <div class="service-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <div class="description" style="font-size: 20px;">UI/UX Design</div>
+              <div class="description">
+                I create intuitive and visually appealing user interfaces that enhance user experience and make your
+                website stand out from the crowd.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <!-- FINAL ----------------------------------------->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <h2 class="heading">Skills</h2>
+      <div class="row justify-content-center">
+        <!-- Center align the items -->
+        <!-- Skill Card -->
+        <div class="card skill-card">
+          <i class="fab fa-html5"></i>
+          <h5 class="description">HTML5</h5>
+        </div>
+        <!-- Skill Card -->
+        <div class="card skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <h5 class="description">CSS3</h5>
+        </div>
+        <!-- Skill Card -->
+        <div class="card skill-card">
+          <i class="fab fa-js"></i>
+          <h5 class="description">JavaScript</h5>
+        </div>
+
+        <!-- Skill Card -->
+        <div class="card skill-card">
+          <i class="fab fa-python"></i>
+          <h5 class="description">Python</h5>
+        </div>
+
+        <!-- Skill Card -->
+        <div class="card skill-card">
+          <i class="fab fa-bootstrap"></i>
+          <h5 class="description">Bootstrap</h5>
+        </div>
+        <!-- Skill Card -->
+        <div class="card skill-card">
+          <i class="fab fa-wordpress"></i>
+          <h5 class="description">WordPress</h5>
+        </div>
+
+        <!-- Skill Card -->
+        <div class="card skill-card">
+          <i class="fas fa-code"></i>
+          <h5 class="description">C</h5>
+        </div>
+
+        <!-- Skill Card -->
+        <div class="card skill-card">
+          <i class="fas fa-database"></i>
+          <h5 class="description">SQL</h5>
+        </div>
+        <!-- Add more skills here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <!-- FINAL ----------------------------------------->
+  <section class="resume-section" id="resume">
+    <div class="container">
+      <h2 class="heading">Resume</h2>
+      <!-- Button to open PDF -->
+      <a class="resume-button description" href="ANKIT RESUME.pdf" target="_blank">Open </a>
+      <!-- Example resume download link -->
+      <a class="resume-button description" href="Ankit Rajput.pdf" download>Download</a>
+      <!-- Add other resume details as needed -->
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <!-- FINAL ----------------------------------------->
+  <section class="certifications-section" id="certifications">
+    <div class="container">
+      <h2 class="heading">Certifications</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <!-- Certificate Card 1 -->
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7100030756386684928/" target="_blank"
+            class="card certificate-card">
+            <img src="cert1.jpg" alt="Certificate 1">
+            <h5 class="description" style="font-size: 20px;">Internship letter</h5>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <!-- Certificate Card 2 -->
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7084060385145761792/"
+            target="_blank" class="card certificate-card">
+            <img src="cert2.jpg" alt="Certificate 2">
+            <h5 class="description" style="font-size: 20px;">internship certificate</h5>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <!-- Certificate Card 3 -->
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7073941226231611392/" target="_blank"
+            class="card certificate-card">
+            <img src="cert3.jpg" alt="Certificate 3">
+            <h5 class="description" style="font-size: 20px;">Pradarshan 2.0 (SGTU TechFest)</h5>
+          </a>
+        </div>
+        <!-- Add more certificates here -->
+        <div class="col-md-4">
+          <!-- Certificate Card 4 -->
+          <a href="https://www.coursera.org/account/accomplishments/certificate/28M7XG3V8U2C"
+            target="_blank" class="card certificate-card">
+            <img src="cert4.jpg" alt="Certificate 4">
+            <h5 class="description" style="font-size: 20px;">Introduction to javascript</h5>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <!-- Certificate Card 5 -->
+          <a href="https://www.coursera.org/account/accomplishments/certificate/X56M8MRB9BPQ"
+            target="_blank" class="card certificate-card">
+            <img src="cert5.jpg" alt="Certificate 5">
+            <h5 class="description" style="font-size: 20px;">Introduction to Java Programming: Java
+            Fundamental Concepts</h5>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <!-- Certificate Card 6 -->
+          <a href="https://www.coursera.org/account/accomplishments/certificate/9GLRWQUVGWHJ" target="_blank"
+            class="card certificate-card">
+            <img src="cert6.jpg" alt="Certificate 6">
+            <h5 class="description" style="font-size: 20px;">Develop You r First Python Program</h5>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <!-- Certificate Card 7 -->
+          <a href="https://www.coursera.org/account/accomplishments/certificate/4ND9J5YS3E45"
+            target="_blank" class="card certificate-card">
+            <img src="cert7.jpg" alt="Certificate 7">
+            <h5 class="description" style="font-size: 20px;">Introdu ction to HTML</h5>
+          </a>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h2 class="heading">Contact Us</h2>
+          <form class="contact-form" id="contactForm" action="https://formsubmit.co/ankitrajput8212@gmail.com"
+            method="POST">
+            <div class="form-group">
+              <label for="name" class="description">Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="description">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email id"
+                required>
+            </div>
+            <div class="form-group">
+              <label for="message" class="description">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message"
+                required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary description">Send Message</button>
+              <button type="button" class="btn btn-primary description" id="resetButton">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <!-- FINAL ----------------------------------------->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="heading">Connect with me</h4>
+          <ul class="social-media-list">
+            <li><a href="https://www.linkedin.com/in/ankit-kumar-607310260/" class="social-media-link"><i
+                  class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/ankitrajput8212" class="social-media-link"><i
+                  class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/ankitrajput8212" class="social-media-link"><i
+                  class="fab fa-github"></i></a></li>
+                  <li><a href="https://www.instagram.com/ankitrajput_8228/" class="social-media-link"><i
+                    class="fa-brands fa-instagram"></i></i></a></li>
+                 <i><a href="https://www.facebook.com/profile.php?id=100055325253388" class="social-media-link"><i
+                      class="fa-brands fa-facebook"></i></i></a></li>
+        </div>
+        <div class="col-md-6 ">
+          <p>
+            <span><a href="mailto:ankitrajput8212@gmail.com"><i class="fas fa-envelope"></i></a></span>
+            ankitrajput8212@gmail.com<br>
+
+            <span><a href="https://www.google.com/maps?q=New+Delhi%2CIndia" target="_blank"><i
+                  class="fas fa-map-marker-alt"></i></a></span> New Delhi, India<br>
+
+          </p>
+          <p>© 2023 Ankit Rajput. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--JS-------------------------------------------------------------------->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+  <!-- Font Awesome Icons script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
